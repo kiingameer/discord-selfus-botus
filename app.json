@@ -1,0 +1,20 @@
+{
+  "name": "Discord-Selfbot",
+  "description": "A Selfbot made to run under a user, to enable more functionalities.",
+  "website": "https://github.com/Macley-Kun/Discord-Selfbot",
+  "env": {
+    "TOKEN": {
+      "description": "Your unique User TOKEN. You can find it by following the steps here: https://github.com/TheRacingLion/Discord-SelfBot/wiki/Discord-Token-Tutorial"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 0,
+      "size": "free"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
