@@ -63,6 +63,7 @@ class Misc:
             most_used_cmd = '{} - {} use{}'.format(cmd_name, total_usage, plural)
         if embed_perms(ctx.message):
             em = discord.Embed(title='Bot Stats', color=0x32441c)
+            em.set_thumbnail(url = 'https://i.imgur.com/TxsPBMI.gif')
             em.add_field(name=u'\U0001F553 Uptime', value=time, inline=False)
             em.add_field(name=u'\u2328 Most Used Cmd', value=most_used_cmd, inline=False)
             em.add_field(name=u'\U0001F4E4 Msgs sent', value=str(self.bot.icount))
@@ -631,9 +632,9 @@ class Misc:
         now = datetime.datetime.now()
         ping = now - msgtime
         if embed_perms(ctx.message):
-            pong = discord.Embed(title='Pong! Response Time:', description=str(ping.microseconds / 1000.0) + ' ms',
-                                 color=0x7A0000)
-            pong.set_thumbnail(url='http://odysseedupixel.fr/wp-content/gallery/pong/pong.jpg')
+            pong = discord.Embed(title='Pong!', description=str(ping.microseconds / 1000.0) + ' ms',
+                                 color=0x35465C)
+            pong.set_thumbnail(url='https://i.imgur.com/xafWcc2.gif')
             await ctx.send(content=None, embed=pong)
         else:
             await ctx.send(self.bot.bot_prefix + '``Response Time: %s ms``' % str(ping.microseconds / 1000.0))
