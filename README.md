@@ -45,6 +45,7 @@ Takes less than 2 minutes to set up. Has various commands and utilities includin
 ### Deploy to Heroku
 
 You can deploy in a simple way to Heroku using the button below.
+
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/Macley-Kun/Discord-Selfbot/tree/dev)
 																						
 ## Buy me a cup of coffee
