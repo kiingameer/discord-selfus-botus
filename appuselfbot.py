@@ -63,6 +63,7 @@ else:
 
 try:
     token = os.environ['TOKEN']
+    customcmd_prefix = os.environ['CUSTOMCMD_PREFIX']
     heroku = True
 except KeyError:
     heroku = False
