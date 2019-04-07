@@ -63,7 +63,6 @@ else:
 
 try:
     token = os.environ['TOKEN']
-    customcmd_prefix = os.environ['CUSTOMCMD_PREFIX']
     heroku = True
 except KeyError:
     heroku = False
@@ -921,6 +920,7 @@ if __name__ == '__main__':
     while True:
         if heroku:
             token = os.environ['TOKEN']
+            customcmd_prefix = os.environ['CUSTOMCMD_PREFIX']
         else:
             token = get_config_value('config', 'token')
         try:
